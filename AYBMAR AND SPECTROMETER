@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPECTROMETER and AYBMAR: Detection and Prevention of wildfire and study of biological evolution</title>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    /* background: chocolate; */
+    z-index: 12;
+    position: fixed;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 5px;
+}
+
+nav {
+    float: right;
+    line-height: 100px;
+}
+
+nav a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav a:hover {
+    color: #718daa;
+}
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    padding-top: 130px; 
+    background: #5a3d55;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+#problem {
+    background: #a2de96;
+}
+
+#problem a {
+    color: #F7FFF7; 
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#problem p {
+    line-height: 20px;
+    padding: 5px;
+}
+
+#problem ul {
+    line-height: 20px;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+#problem h2 {
+    margin-bottom: 15px;
+}
+
+#problem h1 {
+    margin: 20px 0px;
+}
+#problem a:hover {
+    background: rgba(47,48,97,80%);
+}
+.problem-element {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 20px, 0;
+}
+
+.problem-element p {
+    margin-top: 0px;
+}
+
+/* Work Experience
+------------------------------- */
+#work {
+    background: #3ca59d;
+}
+#work img {
+    width: 250px;
+    height: 350px;
+}
+
+.img1 {
+    border-bottom: 1px dashed #343434;
+}
+#work h2,h3 {
+    margin: 15px 0px;
+}
+.job-item h3,p, {
+    padding: 5px;
+    line-height: 20px;
+    
+}
+.work ul {
+    margin-left: 50px;
+}
+.space {
+    margin-top: 30px;
+    font-weight: 700 ;
+    font-style: italic;
+}
+.job-summary p {
+    line-height: 20px ;
+    padding: 5px;
+    font-size: 17.5px;
+    margin: 10px 0px;
+}
+.job-summary a {
+    color: #F7FFF7; 
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.job-summary a:hover {
+    background: rgba(47,48,97,80%);
+}
+
+#future h2{
+    margin-bottom: 20px;
+}
+#future p {
+    padding: 5px;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#future {
+    background: #ffcb74;
+}
+
+
+/* Education
+------------------------------- */
+#resources {
+    background-image: url(https://gdurl.com/5-dS);
+    background-size: cover;
+    padding-bottom: 80px;
+    background-position: top right;
+}
+
+#resources p {
+    line-height: 30px;
+    margin: 20px 0px;
+    font-size: 20px;
+    
+}
+
+#resources a {
+    text-decoration: none;
+}
+#resouces a:hover {
+    color: teal;
+}
+
+
+
+/* Contact Info
+------------------------------- */
+footer {
+    background: #343434;
+    color: #F7FFF7;
+}
+#team {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+#team a {
+    /* padding: 15px; */
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+#team a:hover {
+    text-decoration: underline;
+}
+#team li {
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive layout
+------------------------------- */
+@media screen and (min-width:800px) {
+    .project-element img {
+        float: left;
+        margin: 5px 20px 20px 0px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    header, footer {
+        text-align: center;
+    }
+    #team {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:799px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    #team a {
+        padding: 5px;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <main>
+        <!-- ***********************  ABOUT / PROFILE  *********************** -->
+            <header class="header">
+                <div class="wrapper">
+                    <div class="logo">
+                        <p><a href="https://gdurl.com/ZQEB" target="_blank">AYBRAM</a> and SPECTROMETER
+                    </div>
+                    <nav>
+                        <a class="nav-link" href="#problem">Problem</a>
+                        <a class="nav-link" href="#work">Solution</a>
+                        <a class="nav-link" href="#resources">Resources</a>
+                        <a class="nav-link" href="#team">Team</a>
+                    </nav>
+                </div>
+        
+            </header>
+
+            <section class="hero">
+                <div class="content-wrap" id="Project">
+                
+                <p>Say hello to the AYBMAR, the device that is primarily designed for the detection of wildfires. The wildfires occurring on the larger scales leaves the local citizen and residing wildlife without the shelter, homes, and food. And we are lagging in quick detection of these fires. Hence our aim is to not only allow quick detection but react quickly as well in the prevention of these fires.</p>             
+            
+                </div>
+            </section>
+
+            <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+            <section id="problem">
+                <div class="content-wrap">
+                <h2>Wildfire Observation</h2>
+                <p>To come with the new idea, we had initially needed to analyze the occurrence of fire and thermal anomalies and their effects on the biodiversity. Therefore we utilized the NASA's Earth Observing System Data and Information System (EOSDIS) to monitor this anomalies.</p>
+                <p>The study is primarirly focused on the region of Australia.</p>
+                <p>Using EOSDIS we observed following patterns:</p>
+
+                <ul>
+                    <li>Fires and thermal anomalie</li>
+                    <li>Land Surface Temperature</li>
+                    <li>Fraction of Photo synthetically Active Radiation</li>
+                    <li>Enhanced vegetation index</li>
+                    <li>Net Ecosystem CO2 Exchange</li>
+                </ul>
+
+                <p>Apart from this we also utilized the NASA's AppEEARS to extract the above mentioned data in the analytical form, to understand the variation of theses parameters more thoroughly.</p>
+                <!-- Copy the whole <section> block to add more projects. -->
+                <section class="problem-element">
+                    <p>These observed parameters are plotted as below:</p>
+                    <h1>1. vegetation index and fire/thermal anamalies</h1>
+                    <p>East Australia</p>
+                    <img src="https://gdurl.com/ddzs" alt="">
+                    <p>Kangaroo Island</p>
+                    <img src="https://gdurl.com/mvMP" alt="">
+                    <h1>2. Fraction of Photo synthetically Active Radiation</h1>
+                    <p>East Australia</p>
+                    <img src="https://gdurl.com/TKij" alt="">
+                    <p>Kangaroo Island</p>
+                    <img src="https://gdurl.com/8_Cw" alt="">
+
+                    <p>In the above observations, the first image represents the before and after affects of wildfire that occured during the period of December-2019 and First half of January-2020.We can see that the presence of wildfire has caused the significant loss of biodiversity and similar pheonomenon being aobserved at the Kangaroo Island.</p>
+                    <p>Now since the land has lost a vast amount of vegetationdue to wildfire, the amount of photosythically active raditaiton has also been decreased in these regions, resulting in imbalance of net ecosystem CO2 exchange.</p>
+                    <p>Therefor it is really important to address this issue and come up with a solution that offers prevention of such fires.</p>
+                    </div>
+                </section>
+                <!-- End of Project block. -->
+            </section>
+
+            <!-- ***********************  WORK EXPERIENCE  *********************** -->
+            <section id="work">
+                <div class="content-wrap">
+                <h2>The Solution</h2>
+                
+                <!-- Copy this whole <section> block to add more jobs. -->
+                <section class="job-item">
+                    <div>
+                    <h3>ABYRAM</h3>
+                    <img src="https://gdurl.com/VVOy" alt="">
+                    
+                    </div>  
+                    <div class="job-summary">  
+                    <p class="space">Function</p>
+                    
+                    <p>The AYBMAR device is very useful, by which we will be able to save forests and the lives of thousands of living creatures, as well as make use of the CO2 gas that is abundant, so we can use it to extinguish fires instead of extinguishing them with water, and so we can save water.</p>
+                    <p>AYBMAR device is equipped with a fire-fighting camera so that emergency personnel can see the amount of fire in the place, and it is also equipped with a fire sensor of course, and when it senses a fire, it will automatically send an emergency alarm so that they can know the location of the fire and track it, and the device will at the same time spray a small amount of Gas, because some plants do not die, but if the fire lasts for more than 10 minutes, the device will increase the amount of gas release.</p>
+                    <p>And if the matter lasts, the device will send another emergency alarm so that the firefighters can intervene and extinguish the fire using CO2 gas of course</p>
+                    
+                    </div> 
+
+                    <div>
+                        <h3>SPECTROMETER</h3>
+                        <img src="https://gdurl.com/u93U" alt="">
+                        
+                        </div>  
+                        <div class="job-summary">  
+                        <p class="space">Function</p>
+                        
+                        <p>By installing a UV spectrometer device in certain habitats in which environmental changes threaten life, we can observe the changes that are occurring in the plants and animals. Spectrometers are used in space and can study the atmospheres of other planets and what could lie on the surface, so why not use the same technique on Earth? </p>
+                        <p>This would allow us to observe the current combination of elements being emitted in a specific habitat and observe, over time, how the elements are changing. This would indicate how the life is evolving in the area due to the external threats. After recording this evolution, we would be able to see the biggest changes in life and how it’s adapting as well as make plans to mitigate the biggest threats. </p>
+                        <p>A great example of this is the recent finding of phosphorous on Venus. As far as we know, nothing but life could create this gas. This led to a huge finding and we could pull from this strategy to find other great findings on Earth. </p>
+                        <p>For example, we could look at the levels of Carbon Dioxide and Oxygen to see how fast plants are dying out/reproducing and if It’s faster or slower over time.  We could also look at the levels of other elements of biosignatures like nitrogen and methane to measure the adaptation of life.</p>
+                        <p>This device will take a stream of light and use the prism device within to break it up into a rainbow of wavelengths. The spectrometer will take in light, break it into its spectral components, digitize the signal as a function of wavelength, and read it out and display it through a computer back at the lab. </p>
+                        <p>Certain elements absorb certain wavelengths and will therefore not show certain colors, instead displaying a black line. Through this technique, scientists can observe the elements detected and make observations about how life is changing in that area.</p>
+                        </div> 
+                    
+                </div>
+                </section>
+                <!-- End of Job block. -->
+            </section>
+
+            <section id="future">
+                <div class="content-wrap">
+                    <h2>The Future</h2>
+                    <p>Since the suggested solution and the device is yet conceptual, we are focused to aim towards implementing this concept in the practical application.</p>
+                    <p>In addition to this, we are also looking forward to analyze the above data in the other region of the world also, where such wildfires have regular occurance.</p>
+                </div>
+            </section>
+
+            <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+            <section id="resources">
+                <div class="content-wrap">
+                <h2>Data and Resources</h2>
+                
+                <p>
+                    <a class="resources" target="_blank" href="https://earthdata.nasa.gov/learn/pathfinders/biodiversity/species-distribution">NASA Species Distribution Modeling Data</a>
+                </p>
+                <p>
+                    <a class="resources" target="_blank" href="https://worldview.earthdata.nasa.gov/">NASA Worldview</a>
+                </p>
+                <p>
+                    <a class="resouces" target="_blank" href="https://lpdaacsvc.cr.usgs.gov/appeears/">Application for Extracting and Exploring Analysis Ready Samples (AppEEARS) </a>
+                </p>
+                <p>
+                    <a class="resources" target="_blank" href="https://mol.org/">Map of Life</a>
+                </p>
+                <p>
+                    <a class="resources" target="_blank" href="https://www.wildlifeinsights.org/">Wildlife Insights</a>
+                </p>
+                </div>
+            </section>
+                <!-- End of School block. -->
+            </section>
+
+            <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+            <footer>
+                <div class="content-wrap">
+                <h2>The Team</h2>
+
+                <!-- Social media and contact links. Add or remove any networks. -->
+                <ul id="team">
+                    <li>Aabla Bk</li>
+                    <li><a href="linkedin.com/in/yash-rajan-b93584154">Yash Rajan</a></li>
+                    <li>Laurel Kavanagh</li>
+                    <li>Yomna</li>
+                    <li>Parul Yadav</li>
+                    <li>Mustafa Magdy</li>
+                </ul>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>rgba(218, 218, 218, 0.8)
